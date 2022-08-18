@@ -1,0 +1,19 @@
+spring:
+  web:
+    resources:
+      static-locations:
+        [ classpath:/haha/]
+      add-mappings: true
+      cache:
+        period: 11000
+
+
+  mvc:
+#    #开启restful风格
+    hiddenmethod:
+      filter:
+        enabled: true
+        #        开启自定义返回数据类型
+    contentnegotiation:
+      favor-parameter: true
+
